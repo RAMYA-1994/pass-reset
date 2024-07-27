@@ -22,7 +22,7 @@ function Login() {
     e.preventDefault()
     setLoading(true)
     try {
-      let res = await AxiosService.post('/user/login',{
+      let res = await AxiosService.post('https://pass-reset-feca.onrender.com/login',{
         email,
         password
       })
