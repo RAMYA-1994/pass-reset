@@ -4,7 +4,8 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 try {
-    mongoose.connect(`${process.env.dbUrl}/${process.env.dbName}`)
+    mongoose.connect("mongodb+srv://user1:ramyapraba@cluster0.bnxxvoh.mongodb.net/?retryWrites=true&w=majority&appName=password")
+    
     console.log("moongoose Connected")
 } catch (error) {
     console.log(error)
